@@ -11,7 +11,7 @@ let app = new Vue({
       }
     },
     removeTodo() {
-      this.list.pop(this.message);
+      this.list.pop();
     },
   },
 });
