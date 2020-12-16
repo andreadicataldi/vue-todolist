@@ -2,7 +2,7 @@ let app = new Vue({
   el: "#app",
   data: {
     message: "",
-    list: [],
+    list: ["Accendi il PC", "Lancia Cyberpunk 2077", "Gioca"],
   },
   methods: {
     addTodo() {
