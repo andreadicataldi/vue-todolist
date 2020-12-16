@@ -42,15 +42,19 @@ button {
 
 ul {
   margin-top: 30px;
+  background-color: lightgrey;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 li {
   list-style: none;
-  background-color: lightgrey;
   text-align: left;
   padding: 5px;
+  position: relative;
 }
 
-.hidden {
-  display: none;
+i {
+  position: absolute;
+  right: 10px;
 }
