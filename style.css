@@ -46,4 +46,11 @@ ul {
 
 li {
   list-style: none;
+  background-color: lightgrey;
+  text-align: left;
+  padding: 5px;
+}
+
+.hidden {
+  display: none;
 }
