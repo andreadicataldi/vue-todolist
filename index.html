@@ -19,9 +19,9 @@
         </div>
         <p class="listname">Todo List</p>
         <ul>
-          <li v-for="item in list">
+          <li v-for="item, index in list">
             {{ item }}
-            <i @click="removeTodo" class="fas fa-times"></i>
+            <i @click="removeTodo(index)" class="fas fa-times"></i>
           </li>
           <p v-if="list.length == 0">Your list is empty!</p>
         </ul>

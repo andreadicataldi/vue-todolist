@@ -8,10 +8,12 @@ let app = new Vue({
     addTodo() {
       if (this.message.length >= 4) {
         this.list.push(this.message);
+      } else {
+        alert("Your text is too short.");
       }
     },
-    removeTodo() {
-      this.list.pop();
+    removeTodo(index) {
+      this.list.splice(index, 1);
     },
   },
   created() {
