@@ -14,4 +14,11 @@ let app = new Vue({
       this.list.pop();
     },
   },
+  created() {
+    document.addEventListener("keyup", (e) => {
+      if (e.key === "Enter") {
+        this.addTodo();
+      }
+    });
+  },
 });
