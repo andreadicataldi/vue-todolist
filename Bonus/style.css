@@ -65,3 +65,9 @@ li {
   right: 30px;
   cursor: pointer;
 }
+
+.fa-trash {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}

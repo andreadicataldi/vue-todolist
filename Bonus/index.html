@@ -30,7 +30,9 @@
         <ul>
           <li v-for="item, index in done">{{ item }}</li>
         </ul>
-        <p class="listname">Tasks Deleted</p>
+        <p class="listname">
+          Tasks Deleted <i @click="emptyDel" class="fas fa-trash"></i>
+        </p>
         <ul>
           <li v-for="item, index in deleted">{{ item }}</li>
         </ul>

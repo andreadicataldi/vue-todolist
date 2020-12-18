@@ -24,6 +24,9 @@ let app = new Vue({
     delTodo(index) {
       this.deleted.push(this.list.splice(index, 1)[0]);
     },
+    emptyDel() {
+      this.deleted = [];
+    },
   },
   created() {
     document.addEventListener("keyup", (e) => {
