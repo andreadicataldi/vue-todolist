@@ -21,9 +21,18 @@
         <ul class="todolist">
           <li v-for="item, index in list">
             {{ item }}
-            <i @click="removeTodo(index)" class="fas fa-times"></i>
+            <i @click="delTodo(index)" class="fas fa-minus-square"></i>
+            <i @click="doneTodo(index)" class="fas fa-check-square"></i>
           </li>
           <p v-if="list.length == 0">Your list is empty!</p>
+        </ul>
+        <p class="listname">Tasks Done</p>
+        <ul>
+          <li v-for="item, index in done">{{ item }}</li>
+        </ul>
+        <p class="listname">Tasks Deleted</p>
+        <ul>
+          <li v-for="item, index in deleted">{{ item }}</li>
         </ul>
       </div>
     </div>

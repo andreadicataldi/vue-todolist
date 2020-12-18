@@ -3,6 +3,8 @@ let app = new Vue({
   data: {
     message: "",
     list: ["Accendi il PC", "Lancia Cyberpunk 2077", "Gioca"],
+    done: [],
+    deleted: [],
   },
   methods: {
     addTodo() {
@@ -15,6 +17,12 @@ let app = new Vue({
     },
     removeTodo(index) {
       this.list.splice(index, 1);
+    },
+    doneTodo(index) {
+      this.done.push(this.list.splice(index, 1)[0]);
+    },
+    delTodo(index) {
+      this.deleted.push(this.list.splice(index, 1)[0]);
     },
   },
   created() {
